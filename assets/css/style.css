@@ -1,0 +1,80 @@
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-branding {
+    color: #28352f;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 2.8rem;
+    text-decoration: none;
+    margin-left: 2.4vh;
+    margin-top: 5.4vh;
+  }
+
+  .humburger {
+    display: block;
+    margin-right: 1vh;
+    margin-top: 5.4vh;
+  }
+
+  .humburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    color: brown;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #28352f;
+  }
+
+  .headline {
+    position: relative;
+    background-image: url(/assets/images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 67.15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 2.4vh;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 3rem;
+    color: #172b4d;
+  }
+  .greenTxt {
+    display: block;
+    color: #36b37f;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .socialMedia {
+    list-style: none;
+    display: flex;
+  justify-content: center;
+  }
+
+  li{
+    padding-left: 1rem;
+  }
+
+}
