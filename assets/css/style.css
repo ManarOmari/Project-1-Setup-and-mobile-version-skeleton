@@ -19,7 +19,7 @@
     line-height: 2.8vw;
     text-decoration: none;
     margin-left: 2.4vw;
-     margin-top: 5.4vh;
+    margin-top: 5.4vh;
   }
 
   .humburger {
@@ -36,7 +36,7 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #28352f;
-    border: 2px solid #ACB7C3;
+    border: 2px solid #acb7c3;
   }
 
   .headline {
