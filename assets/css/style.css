@@ -3,6 +3,8 @@
     overflow: hidden;
   }
 
+  .inter-font { font-family: "Inter", sans-serif; }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -11,7 +13,6 @@
 
   .nav-branding {
     color: #28352f;
-    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 6vw;
@@ -50,7 +51,6 @@
     justify-items: center;
     margin-left: 2.4vh;
     text-align: center;
-    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 5vw;
@@ -64,7 +64,6 @@
   }
 
   p {
-    font-family: "Inter", sans-serif;
     font-style: normal;
     font-size: 4vw;
     font-weight: 400;
