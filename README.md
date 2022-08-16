@@ -27,9 +27,10 @@ none
 ### Prerequisites
 
 ### Setup
+[https://github.com/ManarOmari/Project-1-Setup-and-mobile-version-skeleton.git]
 
 ### Install
-
+Open index.html
 ### Usage
 
 ### Run tests
