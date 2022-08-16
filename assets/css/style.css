@@ -1,12 +1,15 @@
 @media only screen and (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
+
+  body {
+     overflow: hidden;
+  }
+
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .nav-branding {
     color: #28352f;
     font-family: "Inter", sans-serif;
@@ -55,26 +58,27 @@
     line-height: 3rem;
     color: #172b4d;
   }
+
   .greenTxt {
     display: block;
     color: #36b37f;
   }
+
   p {
     font-family: "Inter", sans-serif;
     font-style: normal;
-    
     font-size: 4vw;
     font-weight: 400;
     line-height: 28px;
   }
+
   .socialMedia {
     list-style: none;
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
 
   li{
     padding-left: 1rem;
   }
-
 }
