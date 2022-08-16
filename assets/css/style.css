@@ -42,7 +42,7 @@
     position: relative;
     background-image: url(/assets/images/header-bg.png);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: cover;
     height: 67.15vh;
     display: flex;
     flex-direction: column;
