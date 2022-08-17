@@ -3,29 +3,33 @@
     overflow: hidden;
   }
 
-  .inter-font { font-family: "Inter", sans-serif; }
+  .inter-font {
+    font-family: "Inter", sans-serif;
+  }
 
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
   }
 
   .nav-branding {
     color: #28352f;
     font-style: normal;
     font-weight: 600;
-    font-size: 2vw;
-    line-height: 2.8vw;
+    font-size: 1.25rem;
+    line-height: 28px;
     text-decoration: none;
-    margin-left: 2.4vw;
-    margin-top: 5.4vh;
+    margin-left: 24px;
+    margin-top: 54px;
+    text-align: center;
   }
 
   .humburger {
     display: block;
-    margin-right: 4vh;
-    margin-top: 5.4vh;
+    margin-right: 40px;
+    margin-top: 54px;
   }
 
   .humburger .bar {
@@ -40,8 +44,7 @@
   }
 
   .headline {
-    position: absolute;
-    height: 72.6vw;
+    height: 648px;
     background-image: url(/assets/images/header-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -52,29 +55,33 @@
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 4vw;
-    line-height: 5.2vw;
+    font-size: 40px;
+    line-height: 52px;
     color: #172b4d;
-    padding: 6.4vw 2.4vw;
+    padding: 64px 24px;
   }
 
   .headline h1 {
-    margin-top: 20.6vw;
+    margin-top: 444px;
+    width: 80%;
+    margin-left: 30px;
   }
 
   .greenTxt {
     display: block;
+    margin-left: 24px;
+    margin-top: 20px;
     color: #36b37f;
   }
 
   p {
     font-style: normal;
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 2.8vw;
+    line-height: 28px;
     text-align: center;
     width: 90%;
-    margin-left: 2.4vw;
+    margin-left: 24px;
   }
 
   .socialMedia {
@@ -83,15 +90,72 @@
     justify-content: center;
   }
 
-  li {
-    padding-left: 1rem;
+  .twitter {
+    position: absolute;
+    left: 27.31%;
+    right: 67.36%;
+    top: 67.83%;
+    bottom: 23.42%;
+    width: 20px;
+  }
+
+  .linkedin {
+    position: absolute;
+    width: 20px;
+    left: 37.71%;
+    right: 60.96%;
+    top: 67.69%;
+    bottom: 23.42%;
+  }
+
+  .meduim {
+    position: absolute;
+    left: 48.38%;
+    right: 46.29%;
+    top: 67.69%;
+    bottom: 23.69%;
+  }
+
+  .github {
+    position: absolute;
+    left: 59.04%;
+    right: 36.16%;
+    top: 67.69%;
+    bottom: 23.42%;
+  }
+
+  .angleList {
+    position: absolute;
+    left: 68.91%;
+    right: 27.31%;
+    top: 67.69%;
+    bottom: 23.42%;
   }
 
   .moreWorks {
     text-align: center;
   }
 
+  .moreWorks a img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px / 2 + 0.5px);
+    bottom: 180px;
+  }
+
   .moreWorks h1 {
-    margin-top: 3vw;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 150px;
+    padding-top: 30px;
+    text-align: center;
   }
 }
