@@ -1,0 +1,315 @@
+@media only screen and (max-width: 768px) {
+  body {
+    /** overflow: hidden; **/
+  }
+
+  .inter-font {
+    font-family: "Inter", sans-serif;
+    color: #3a4a42;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .nav-branding {
+    color: #28352f;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 28px;
+    text-decoration: none;
+    margin-left: 24px;
+    margin-top: 54px;
+    text-align: center;
+  }
+
+  .humburger {
+    display: block;
+    margin-right: 40px;
+    margin-top: 54px;
+  }
+
+  .humburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #28352f;
+    border: 2px solid #acb7c3;
+  }
+
+  .headline {
+    height: 648px;
+    background-image: url(/assets/images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    padding: 64px 24px;
+  }
+
+  .headline h1 {
+    margin-top: 444px;
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .greenTxt {
+    display: block;
+    margin-left: 24px;
+    margin-top: 20px;
+    color: #36b37f;
+  }
+
+  p {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    width: 90%;
+    margin-left: 24px;
+  }
+
+  .socialMedia {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .twitter {
+    position: absolute;
+    left: 27.31%;
+    right: 67.36%;
+    top: 67.83%;
+    bottom: 23.42%;
+    width: 20px;
+  }
+
+  .linkedin {
+    position: absolute;
+    width: 20px;
+    left: 37.71%;
+    right: 60.96%;
+    top: 67.69%;
+    bottom: 23.42%;
+  }
+
+  .meduim {
+    position: absolute;
+    left: 48.38%;
+    right: 46.29%;
+    top: 67.69%;
+    bottom: 23.69%;
+  }
+
+  .github {
+    position: absolute;
+    left: 59.04%;
+    right: 36.16%;
+    top: 67.69%;
+    bottom: 23.42%;
+  }
+
+  .angleList {
+    position: absolute;
+    left: 68.91%;
+    right: 27.31%;
+    top: 67.69%;
+    bottom: 23.42%;
+  }
+
+  .moreWorks {
+    text-align: center;
+  }
+
+  .moreWorks a img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px / 2 + 0.5px);
+    bottom: 180px;
+  }
+
+  .moreWorks h1 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 150px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .works {
+    background-color: white;
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 276px;
+    margin-left: 24px;
+    text-align: center;
+  }
+
+  .multi-stories {
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  .grayBg {
+    width: 100%;
+    height: 252px;
+    background-color: #ebf0ee;
+  }
+
+  .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+    left: calc(50% - 327px / 2);
+    bottom: 0px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  .projectBTNs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .projectBTNs li button {
+    padding: 8px 12px;
+    background: #ebf0ee;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px;
+    border: 1px solid #ebf0ee;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+    line-height: 16px;
+  }
+
+  .seeProject {
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 170px;
+    height: 48px;
+    left: calc(50% - 122px / 2 + 0.5px);
+    bottom: 8px;
+    background: #36b37f;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 24px;
+  }
+
+  .aboutMe {
+    background-color: white;
+    background-image: none;
+    padding: 0;
+    align-items: center;
+    height: auto;
+  }
+
+  .skills {
+    display: flex;
+    background: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    list-style: none;
+    width: 90%;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+
+  .skills li img {
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 80px / 2 + 0.5px);
+    top: calc(50% - 80px / 2);
+    margin-top: 40px;
+  }
+
+  .skills li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #344563;
+    text-align: center;
+    display: block;
+    margin-top: 64px;
+  }
+
+  .SkillsBTNs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .SkillsBTNs li button {
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 8px;
+    color: #36b37f;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 97px;
+  }
+
+  .aboutMe h1 {
+    background-color: white;
+    background-image: none;
+    margin-top: 0;
+  }
+}
