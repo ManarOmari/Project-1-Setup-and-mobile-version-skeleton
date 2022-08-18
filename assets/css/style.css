@@ -88,7 +88,9 @@
   .socialMedia {
     list-style: none;
     display: flex;
+    margin-block: 330px;
     justify-content: center;
+    margin-top: 0px
   }
 
   .twitter {
@@ -155,8 +157,8 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    margin-top: 150px;
-    padding-top: 30px;
+    margin-top: 0;
+    padding-top: 0;
     text-align: center;
   }
 
