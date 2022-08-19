@@ -302,6 +302,7 @@ p {
   font-weight: 600;
   margin-top: 20px;
   width: 97px;
+  border: 1px;
 }
 
 .aboutMe h2 {
