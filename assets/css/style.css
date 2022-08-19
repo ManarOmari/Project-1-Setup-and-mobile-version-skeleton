@@ -1,5 +1,5 @@
-body {
-  /** overflow: hidden; **/
+* {
+  box-sizing: border-box;
 }
 
 .inter-font {
@@ -284,18 +284,21 @@ p {
 .SkillsBTNs {
   list-style: none;
   display: flex;
+  width: 85%;
   align-items: center;
   justify-content: center;
   justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .SkillsBTNs li button {
-  padding: 12px;
+  display: flex;
+  padding: 8px;
   background: #fff;
   border-radius: 8px;
   color: #36b37f;
   margin-right: 10px;
-  margin-bottom: 40px;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -303,6 +306,8 @@ p {
   margin-top: 20px;
   width: 97px;
   border: 1px;
+  text-align: center;
+  justify-content: center;
 }
 
 .aboutMe h2 {
