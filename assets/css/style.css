@@ -315,3 +315,13 @@ p {
   background-image: none;
   margin-top: 0;
 }
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+}
