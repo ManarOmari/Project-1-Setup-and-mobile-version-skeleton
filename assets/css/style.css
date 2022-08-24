@@ -313,6 +313,16 @@ p {
   margin-top: 40px;
 }
 
+footer a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
 .skills li a {
   text-decoration: none;
   font-weight: 600;
@@ -409,14 +419,4 @@ footer {
   display: flex;
   justify-content: center;
   justify-items: center;
-}
-
-footer a {
-  text-decoration: none;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
 }
