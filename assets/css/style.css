@@ -545,6 +545,23 @@ footer {
     position: relative;
     bottom: calc(-115%  - 40px / 2 + 0.5px);
   }
+
+  .works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .aboutMe p {
+    margin-bottom: 2%;
+  }
+
   .display {
     display: none;
   }
