@@ -12,6 +12,7 @@
     <title>Portfolio: setup and mobile first</title>
   </head>
   <body>
+    <main>
     <header>
       <nav class="navbar">
         <a href="#" class="nav-branding inter-font">Welcome</a>
@@ -20,14 +21,29 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
+        <div class="navMenu">
+          <ul class="navItems">
+            <li class="navListItem inter-font"> <a href="#">Portfolio</a>
+            </li>
+            <li class="navListItem inter-font"> <a href="#">About</a>
+            </li>
+            <li class="navListItem inter-font"> <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="headline inter-font">
-      <h1>
+      <h1 class="show">
+        Hey there. I’m Alex .
+        <span class="greenTxt"> Iam a software developer</span>
+      </h1>
+     
+      <h1 class="display">
         Hey there. I’m <br>Manar
         <span class="greenTxt"> Iam a software <br>developer</span>
       </h1>
-      <p class="inter-font">
+      <p class="inter-font ">
         I can help you build a product , feature or website Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, don’t hestiate to contact me.
@@ -63,12 +79,14 @@
         <a href="#">
         <img src="/assets/images/Disabled.png" alt="more work arrow" />
     </a>
-        <h2>
+        <h2 class="display">
           My Recent <br />
           Work
         </h2>
+        <h2 class="show">My Recent Work</h2>
       </div>
     </section>
+  </main>
     <section class="works">
     <div class="multi-stories">
      <div class="grayBg"></div>
@@ -270,6 +288,7 @@
     <footer>
       <a href="#">myemailhere@email.com</a>
     </footer>
+  
   </body>
 </html>
 

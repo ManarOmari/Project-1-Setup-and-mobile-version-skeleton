@@ -43,6 +43,10 @@
   border: 2px solid #acb7c3;
 }
 
+.navMenu {
+  display: none;
+}
+
 .headline {
   height: 648px;
   background-image: url(/assets/images/header-bg.png);
@@ -93,7 +97,6 @@ p {
 }
 
 .twitter {
-  position: absolute;
   left: 27.31%;
   right: 67.36%;
   top: 67.83%;
@@ -102,7 +105,6 @@ p {
 }
 
 .linkedin {
-  position: absolute;
   width: 20px;
   left: 37.71%;
   right: 60.96%;
@@ -111,7 +113,6 @@ p {
 }
 
 .meduim {
-  position: absolute;
   left: 48.38%;
   right: 46.29%;
   top: 67.69%;
@@ -119,7 +120,6 @@ p {
 }
 
 .github {
-  position: absolute;
   left: 59.04%;
   right: 36.16%;
   top: 67.69%;
@@ -127,7 +127,6 @@ p {
 }
 
 .angleList {
-  position: absolute;
   left: 68.91%;
   right: 27.31%;
   top: 67.69%;
@@ -143,7 +142,6 @@ p {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-  position: absolute;
   width: 40px;
   height: 40px;
   left: calc(50% - 40px / 2 + 0.5px);
@@ -419,4 +417,139 @@ footer {
   display: flex;
   justify-content: center;
   justify-items: center;
+}
+
+.display {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 100%;
+    background-image: url("/assets/images/header-desktop-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-branding {
+    display: none;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItems {
+    list-style: none;
+    display: flex;
+  }
+
+  .navListItem {
+    padding: 4%;
+  }
+
+  .navItems li a {
+    text-decoration: none;
+  }
+
+  .headline {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .headline h1 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8vw;
+    line-height:125%;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+    margin-top: 20%;
+    margin-left: 0;
+  }
+
+  .greenTxt {
+    margin: 0;
+  }
+
+  p {
+    font-size: 2vw;
+    margin: 0;
+    width: 60%;
+  }
+
+  .socialMedia {
+    margin-block: 0;
+    left: calc(50% - 40px / 2 + 0.5px);
+  }
+
+  .twitter {
+    position: relative;
+  }
+
+  .linkedin {
+    position: relative;
+  }
+
+  .meduim {
+    position: relative;
+  }
+
+  .github {
+    position: relative;
+  }
+
+  .angleList {
+    position: relative;
+  }
+
+  .moreWorks a img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px / 2 + 0.5px);
+    bottom: calc(-38% - 40px / 2 + 0.5px);
+    position: relative;
+  }
+
+  .moreWorks h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 5.2vw;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    position: relative;
+    bottom: calc(-115%  - 40px / 2 + 0.5px);
+  }
+  .display {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
 }
