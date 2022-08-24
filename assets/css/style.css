@@ -562,6 +562,14 @@ footer {
     margin-bottom: 2%;
   }
 
+  .workSkills {
+    margin-top: 0;
+  }
+
+  .SkillsBTNs {
+    width: 100%;
+  }
+
   .display {
     display: none;
   }
