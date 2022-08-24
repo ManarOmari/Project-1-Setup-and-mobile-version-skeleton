@@ -225,7 +225,6 @@ p {
 
 .projectBTNs li button :enabled {
   padding: 8px 12px;
-  background: #ebf0ee;
   border-radius: 4px;
   align-items: center;
   font-size: 12px;
@@ -236,7 +235,6 @@ p {
   color: #3a4a42;
   line-height: 16px;
   background: #36b37f;
-  border-radius: 4px;
 }
 
 .projectBTNs li button :hover {
@@ -251,13 +249,11 @@ p {
   color: #3a4a42;
   line-height: 16px;
   background: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
-  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .projectBTNs li button :active {
   padding: 8px 12px;
-  background: #ebf0ee;
   border-radius: 4px;
   align-items: center;
   font-size: 12px;
@@ -268,7 +264,6 @@ p {
   color: #3a4a42;
   line-height: 16px;
   background: #008552;
-  border-radius: 4px;
 }
 
 .seeProject {
