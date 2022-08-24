@@ -223,6 +223,49 @@ p {
   line-height: 16px;
 }
 
+.projectBTNs li button :enabled {
+  padding: 8px 12px;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #ebf0ee;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  line-height: 16px;
+  background: #36b37f;
+}
+
+.projectBTNs li button :hover {
+  padding: 8px 12px;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #ebf0ee;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  line-height: 16px;
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.projectBTNs li button :active {
+  padding: 8px 12px;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #ebf0ee;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  line-height: 16px;
+  background: #008552;
+}
+
 .seeProject {
   align-items: center;
   padding: 12px;
@@ -270,6 +313,16 @@ p {
   margin-top: 40px;
 }
 
+footer a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
 .skills li a {
   text-decoration: none;
   font-weight: 600;
@@ -314,4 +367,56 @@ p {
   background-color: white;
   background-image: none;
   margin-top: 0;
+}
+
+.form-section {
+  align-items: center;
+  color: #6b778c;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#name {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#email {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#msg {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  height: 114px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.form-section .socialMedia {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
