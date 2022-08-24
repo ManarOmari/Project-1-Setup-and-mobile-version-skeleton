@@ -223,6 +223,55 @@ p {
   line-height: 16px;
 }
 
+.projectBTNs li button :enabled {
+  padding: 8px 12px;
+  background: #EBF0EE;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #EBF0EE;
+  letter-spacing: 0.03em;
+  color: #3A4A42;
+  line-height: 16px;
+  background: #36B37F;
+  border-radius: 4px;
+}
+
+.projectBTNs li button :hover {
+  padding: 8px 12px;
+  background: #EBF0EE;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #EBF0EE;
+  letter-spacing: 0.03em;
+  color: #3A4A42;
+  line-height: 16px;
+  background: #36B37F;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.projectBTNs li button :active {
+  padding: 8px 12px;
+  background: #EBF0EE;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+  border: 1px solid #EBF0EE;
+  letter-spacing: 0.03em;
+  color: #3A4A42;
+  line-height: 16px;
+  background: #008552;
+  border-radius: 4px;
+}
+
 .seeProject {
   align-items: center;
   padding: 12px;
