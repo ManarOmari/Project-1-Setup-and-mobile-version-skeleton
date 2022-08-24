@@ -317,11 +317,63 @@ p {
 }
 
 .form-section {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  color: #6b778c;
 }
 
 .formSection {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#name {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#email {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#msg {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  height: 114px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.form-section .socialMedia {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
 }
