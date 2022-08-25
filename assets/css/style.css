@@ -420,7 +420,7 @@ footer {
 }
 
 .display {
-  display: inline-flex;
+  display: block;
 }
 
 .show {
@@ -430,7 +430,7 @@ footer {
 @media only screen and (min-width: 768px) {
   main {
     width: 100%;
-    background-image: url("/assets/images/header-desktop-bg.png");
+    background-image: url("/assets/images/desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -500,8 +500,9 @@ footer {
   }
 
   .socialMedia {
+    display: flex;
     margin-block: 0;
-    left: calc(50% - 40px / 2 + 0.5px);
+    
   }
 
   .twitter {
@@ -554,15 +555,34 @@ footer {
   }
 
   .workSkills {
-    margin-top: 0;
+    width: 100%;
   }
 
   .SkillsBTNs {
     width: 100%;
+    height: auto;
+  }
+
+  .SkillsBTNs li button {
+    display: flex;
+    flex-direction: row;
+    /* padding: 8px; */
+    background: #fff;
+    border-radius: 8px;
+    color: #36b37f;
+    /* margin-right: 10px; */
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    margin-top: 13px;
+    border: 1px;
+    text-align: center;
   }
 
   .aboutMe {
-    background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
+    background-image: url("/assets/images/about-me-bg-left-desktop.svg"),
+      url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -573,7 +593,9 @@ footer {
 
   .form-section {
     display: flex;
-    background-image: url("/assets/images/contact\ form-left-desktop.svg"), url("/assets/images/contact-form-bg-middle-desktop.svg"), url("/assets/images/contact-form-right-desktop.svg");
+    background-image: url("/assets/images/contact\ form-left-desktop.svg"),
+      url("/assets/images/contact-form-bg-middle-desktop.svg"),
+      url("/assets/images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position-x: right, center, left;
     background-position-y: bottom, bottom, bottom;
@@ -595,11 +617,39 @@ footer {
     border-top: 1px solid #dfe1e6;
   }
 
+  footer ul {
+    display: flex;
+  }
+
+  .seeProject {
+    transition: 0.3s;
+  }
+
+  .seeProject:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+
+  .projectBTNs {
+    margin-left: 0;
+  }
+
+  .projectBTNs li button {
+    transition: 0.3s ease-in-out;
+    padding: 14px 4px;
+  }
+
+  .projectBTNs li :hover {
+    border: 1px solid green;
+    background-color: #3e8e41;
+    color: white;
+  }
+
   .display {
     display: none;
   }
 
   .show {
-    display: inline-flex;
+    display: block;
   }
 }
