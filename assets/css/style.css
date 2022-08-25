@@ -552,10 +552,8 @@ footer a {
   }
 
   .aboutMe {
-    background-image:
-      url("/assets/images/about-me-bg-left-desktop.svg"),
-      url("/assets/images/about\ me-right-\ desktop.svg");
-    background-repeat: no-repeat, no-repeat; 
+    background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
   }
 
