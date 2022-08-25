@@ -43,8 +43,11 @@
   border: 2px solid #acb7c3;
 }
 
+.navMenu {
+  display: none;
+}
+
 .headline {
-  height: 648px;
   background-image: url(/assets/images/header-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -55,16 +58,15 @@
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4vw;
+  line-height: 5.2vw;
   color: #172b4d;
-  padding: 64px 24px;
 }
 
 .headline h1 {
-  margin-top: 444px;
-  width: 80%;
-  margin-left: 30px;
+  margin-top: 333px;
+  width: 100%;
+  margin-left: 0;
 }
 
 .greenTxt {
@@ -76,62 +78,58 @@
 
 p {
   font-style: normal;
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 2.8vw;
   text-align: center;
-  width: 90%;
   margin-left: 24px;
 }
 
 .socialMedia {
   list-style: none;
   display: flex;
-  margin-block: 330px;
-  justify-content: center;
-  margin-top: 0;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .twitter {
-  position: absolute;
   left: 27.31%;
   right: 67.36%;
   top: 67.83%;
   bottom: 23.42%;
-  width: 20px;
+  padding: 10px;
 }
 
 .linkedin {
-  position: absolute;
-  width: 20px;
   left: 37.71%;
   right: 60.96%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .meduim {
-  position: absolute;
   left: 48.38%;
   right: 46.29%;
   top: 67.69%;
   bottom: 23.69%;
+  padding: 10px;
 }
 
 .github {
-  position: absolute;
   left: 59.04%;
   right: 36.16%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .angleList {
-  position: absolute;
   left: 68.91%;
   right: 27.31%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .moreWorks {
@@ -139,15 +137,9 @@ p {
 }
 
 .moreWorks a img {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 8px;
-  position: absolute;
   width: 40px;
   height: 40px;
-  left: calc(50% - 40px / 2 + 0.5px);
-  bottom: 180px;
 }
 
 .moreWorks h2 {
@@ -156,8 +148,7 @@ p {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 179px;
   text-align: center;
 }
 
@@ -313,6 +304,13 @@ p {
   margin-top: 40px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
 footer a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -363,15 +361,15 @@ footer a {
   justify-content: center;
 }
 
-.aboutMe h2 {
-  background-color: white;
-  background-image: none;
-  margin-top: 0;
-}
-
 .form-section {
   align-items: center;
   color: #6b778c;
+}
+
+.form-section h6 {
+  background-color: white;
+  background-image: none;
+  margin-top: 0;
 }
 
 .formSection {
@@ -415,8 +413,236 @@ footer a {
   margin-bottom: 50px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+.display {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    background-image: url("/assets/images/desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    margin-left: 35vw;
+  }
+
+  .nav-branding {
+    display: none;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItems {
+    list-style: none;
+    display: flex;
+  }
+
+  .navListItem {
+    padding: 4%;
+  }
+
+  .navItems li a {
+    text-decoration: none;
+  }
+
+  .headline {
+    background-image: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .headline h1 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8vw;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  .greenTxt {
+    margin: 0;
+  }
+
+  p {
+    font-size: 2vw;
+    margin: 0;
+    width: 60%;
+  }
+
+  .socialMedia {
+    display: flex;
+    margin-block: 0;
+  }
+
+  .moreWorks a img {
+    margin-bottom: 130px;
+  }
+
+  .recentWork h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 4.2vw;
+    margin-top: 10vw;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .txt {
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 2.7vw;
+  }
+
+  .workSkills {
+    width: 100%;
+  }
+
+  .SkillsBTNs {
+    width: 80%;
+    height: auto;
+  }
+
+  .SkillsBTNs li button {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 8px;
+    color: #36b37f;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    margin-top: 13px;
+    border: 1px;
+    text-align: center;
+  }
+
+  .aboutMe {
+    background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%, contain;
+    background-position-y: 10%, top;
+  }
+
+  .aboutMe h2 {
+    font-size: 4vw;
+  }
+
+  .aboutMe p {
+    margin-bottom: 2%;
+    font-size: 2vw;
+  }
+
+  .form-section {
+    display: flex;
+    background-image: url("/assets/images/contact\ form-left-desktop.svg"), url("/assets/images/contact-form-bg-middle-desktop.svg"), url("/assets/images/contact-form-right-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-x: right, center, left;
+    background-position-y: bottom, bottom, bottom;
+    background-size: 7%, 4%, 10%;
+  }
+
+  .form-section h6 {
+    font-size: 2vw;
+    align-items: center;
+    color: #172b4d;
+    font-weight: 700;
+    background: none;
+    width: 33%;
+    line-height: 3vw;
+    margin-left: 11rem;
+  }
+
+  .formSection {
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  #name {
+    width: 75%;
+  }
+
+  #email {
+    width: 75%;
+  }
+
+  #msg {
+    width: 75%;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  footer .socialMedia {
+    display: flex;
+    justify-content: center;
+  }
+
+  .seeProject {
+    transition: 0.3s;
+    border: none;
+    width: auto;
+  }
+
+  .seeProject:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+
+  .projectBTNs {
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectBTNs li button {
+    transition: 0.3s ease-in-out;
+    padding: 7px 4px;
+    font-weight: 700;
+  }
+
+  .projectBTNs li :hover {
+    border: 1px solid green;
+    background-color: #3e8e41;
+    color: white;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
 }
