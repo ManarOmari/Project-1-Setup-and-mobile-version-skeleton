@@ -419,8 +419,9 @@ footer {
   justify-items: center;
 }
 
+
 .display {
-  display: inline-flex;
+  display: block;
 }
 
 .show {
@@ -580,6 +581,25 @@ footer {
   }
 
   .show {
-    display: inline-flex;
+    display: block;
   }
+
+.seeProject {
+  transition: 0.3s;
+}  
+
+.seeProject:hover {
+  background-color: #3E8E41;
+  color: white;
+}  
+
+.projectBTNs li button {
+  transition: 0.3s ease-in-out;
+}  
+
+.projectBTNs li:hover {
+  border: 1px solid green;
+  background-color: #3E8E41;
+  color: white;
+ }
 }
