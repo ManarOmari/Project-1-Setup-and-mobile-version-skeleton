@@ -413,12 +413,6 @@ footer a {
   margin-bottom: 50px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
 .display {
   display: block;
 }
@@ -560,8 +554,8 @@ footer {
   .aboutMe {
     background-image: url("/assets/images/about-me-bg-left-desktop.svg"),
       url("/assets/images/about\ me-right-\ desktop.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
   }
 
   .aboutMe p {
@@ -571,8 +565,8 @@ footer {
   .form-section {
     display: flex;
     background-image: url("/assets/images/contact\ form-left-desktop.svg"),
-      url("/assets/images/contact-form-bg-middle-desktop.svg"),
-      url("/assets/images/contact-form-right-desktop.svg");
+    url("/assets/images/contact-form-bg-middle-desktop.svg"),
+    url("/assets/images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position-x: right, center, left;
     background-position-y: bottom, bottom, bottom;
@@ -601,7 +595,6 @@ footer {
   footer ul {
     display: flex;
     justify-content: center;
-   
   }
 
   .seeProject {
