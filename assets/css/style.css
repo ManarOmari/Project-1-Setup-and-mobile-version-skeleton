@@ -551,7 +551,7 @@ footer a {
     background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 20%, contain;
-    background-position-y: 10%,top;
+    background-position-y: 10%, top;
   }
 
   .aboutMe h2 {
@@ -580,7 +580,7 @@ footer a {
     background: none;
     width: 33%;
     line-height: 3vw;
-    margin-left: 11rem
+    margin-left: 11rem;
   }
 
   .formSection {
