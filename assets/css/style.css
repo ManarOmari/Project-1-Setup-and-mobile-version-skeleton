@@ -573,18 +573,18 @@ footer {
 
   .form-section {
     display: flex;
-    background-image: url("/assets/images/contact\ form-left-desktop.svg"),url("/assets/images/contact-form-bg-middle-desktop.svg"),url("/assets/images/contact-form-right-desktop.svg");
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position-x: right,center,left;
-    background-position-y: bottom,bottom,bottom;
-    background-size: 7%,4%,10%;
+    background-image: url("/assets/images/contact\ form-left-desktop.svg"), url("/assets/images/contact-form-bg-middle-desktop.svg"), url("/assets/images/contact-form-right-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-x: right, center, left;
+    background-position-y: bottom, bottom, bottom;
+    background-size: 7%, 4%, 10%;
   }
 
   .form-section h2 {
     font-size: 3vw;
     align-items: center;
-    color: #172B4D;
-    font-size: 700;
+    color: #172b4d;
+    font-weight: 700;
   }
 
   .formSection {
