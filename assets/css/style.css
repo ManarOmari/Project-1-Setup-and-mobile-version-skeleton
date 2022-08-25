@@ -504,26 +504,6 @@ footer {
     left: calc(50% - 40px / 2 + 0.5px);
   }
 
-  .twitter {
-    position: relative;
-  }
-
-  .linkedin {
-    position: relative;
-  }
-
-  .meduim {
-    position: relative;
-  }
-
-  .github {
-    position: relative;
-  }
-
-  .angleList {
-    position: relative;
-  }
-
   .moreWorks a img {
     display: flex;
     width: 40px;
