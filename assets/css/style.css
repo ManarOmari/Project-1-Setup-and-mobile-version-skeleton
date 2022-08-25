@@ -434,7 +434,7 @@ footer {
   transition: 0.3s ease-in-out;
 }  
 
-.projectBTNs li :hover {
+.projectBTNs li:hover {
   border: 1px solid green;
   background-color: #3E8E41;
   color: white;
