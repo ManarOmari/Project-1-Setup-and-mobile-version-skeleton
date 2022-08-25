@@ -583,22 +583,22 @@ footer {
     display: block;
   }
 
-.seeProject {
-  transition: 0.3s;
-}  
+  .seeProject {
+    transition: 0.3s;
+  }
 
-.seeProject:hover {
-  background-color: #3E8E41;
-  color: white;
-}  
+  .seeProject:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
 
-.projectBTNs li button {
-  transition: 0.3s ease-in-out;
-}  
+  .projectBTNs li button {
+    transition: 0.3s ease-in-out;
+  }
 
-.projectBTNs li:hover {
-  border: 1px solid green;
-  background-color: #3E8E41;
-  color: white;
- }
+  .projectBTNs li:hover {
+    border: 1px solid green;
+    background-color: #3E8E41;
+    color: white;
+  }
 }
