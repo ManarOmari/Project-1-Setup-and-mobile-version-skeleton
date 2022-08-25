@@ -48,7 +48,6 @@
 }
 
 .headline {
-  height: 648px;
   background-image: url(/assets/images/header-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -59,16 +58,15 @@
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4vw;
+  line-height: 5.2vw;
   color: #172b4d;
-  padding: 64px 24px;
 }
 
 .headline h1 {
-  margin-top: 444px;
-  width: 80%;
-  margin-left: 30px;
+  margin-top: 333px;
+  width: 100%;
+  margin-left: 0;
 }
 
 .greenTxt {
@@ -80,20 +78,18 @@
 
 p {
   font-style: normal;
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 2.8vw;
   text-align: center;
-  width: 90%;
   margin-left: 24px;
 }
 
 .socialMedia {
   list-style: none;
   display: flex;
-  margin-block: 330px;
-  justify-content: center;
-  margin-top: 0;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .twitter {
@@ -101,15 +97,15 @@ p {
   right: 67.36%;
   top: 67.83%;
   bottom: 23.42%;
-  width: 20px;
+  padding: 10px;
 }
 
 .linkedin {
-  width: 20px;
   left: 37.71%;
   right: 60.96%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .meduim {
@@ -117,6 +113,7 @@ p {
   right: 46.29%;
   top: 67.69%;
   bottom: 23.69%;
+  padding: 10px;
 }
 
 .github {
@@ -124,6 +121,7 @@ p {
   right: 36.16%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .angleList {
@@ -131,6 +129,7 @@ p {
   right: 27.31%;
   top: 67.69%;
   bottom: 23.42%;
+  padding: 10px;
 }
 
 .moreWorks {
@@ -138,14 +137,9 @@ p {
 }
 
 .moreWorks a img {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 8px;
   width: 40px;
   height: 40px;
-  left: calc(50% - 40px / 2 + 0.5px);
-  bottom: 180px;
 }
 
 .moreWorks h2 {
@@ -154,8 +148,7 @@ p {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 179px;
   text-align: center;
 }
 
@@ -309,6 +302,13 @@ p {
   left: calc(50% - 80px / 2 + 0.5px);
   top: calc(50% - 80px / 2);
   margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
 }
 
 footer a {
@@ -485,7 +485,7 @@ footer {
     text-align: center;
     letter-spacing: 0.37px;
     color: #172b4d;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-left: 0;
   }
 
@@ -502,27 +502,6 @@ footer {
   .socialMedia {
     display: flex;
     margin-block: 0;
-    
-  }
-
-  .twitter {
-    position: relative;
-  }
-
-  .linkedin {
-    position: relative;
-  }
-
-  .meduim {
-    position: relative;
-  }
-
-  .github {
-    position: relative;
-  }
-
-  .angleList {
-    position: relative;
   }
 
   .moreWorks a img {
@@ -566,11 +545,9 @@ footer {
   .SkillsBTNs li button {
     display: flex;
     flex-direction: row;
-    /* padding: 8px; */
     background: #fff;
     border-radius: 8px;
     color: #36b37f;
-    /* margin-right: 10px; */
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -615,10 +592,16 @@ footer {
 
   footer {
     border-top: 1px solid #dfe1e6;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
   }
 
   footer ul {
     display: flex;
+    justify-content: center;
+   
   }
 
   .seeProject {
