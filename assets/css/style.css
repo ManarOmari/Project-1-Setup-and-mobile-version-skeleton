@@ -361,15 +361,15 @@ footer a {
   justify-content: center;
 }
 
-.aboutMe h2 {
-  background-color: white;
-  background-image: none;
-  margin-top: 0;
-}
-
 .form-section {
   align-items: center;
   color: #6b778c;
+}
+
+.form-section h2 {
+  background-color: white;
+  background-image: none;
+  margin-top: 0;
 }
 
 .formSection {
@@ -420,7 +420,7 @@ footer {
 }
 
 .display {
-  display: block;
+  display: inline-flex;
 }
 
 .show {
@@ -570,11 +570,36 @@ footer {
   .aboutMe p {
     margin-bottom: 2%;
   }
+
+  .form-section {
+    display: flex;
+    background-image: url("/assets/images/contact\ form-left-desktop.svg"),url("/assets/images/contact-form-bg-middle-desktop.svg"),url("/assets/images/contact-form-right-desktop.svg");
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position-x: right,center,left;
+    background-position-y: bottom,bottom,bottom;
+    background-size: 7%,4%,10%;
+  }
+
+  .form-section h2 {
+    font-size: 3vw;
+    align-items: center;
+    color: #172B4D;
+    font-size: 700;
+  }
+
+  .formSection {
+    align-items: flex-start;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
   .display {
     display: none;
   }
 
   .show {
-    display: block;
+    display: inline-flex;
   }
 }
