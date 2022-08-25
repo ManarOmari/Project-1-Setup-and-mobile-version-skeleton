@@ -646,3 +646,187 @@ footer a {
     display: block;
   }
 }
+
+.display {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 100%;
+    background-image: url("/assets/images/header-desktop-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-branding {
+    display: none;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItems {
+    list-style: none;
+    display: flex;
+  }
+
+  .navListItem {
+    padding: 4%;
+  }
+
+  .navItems li a {
+    text-decoration: none;
+  }
+
+  .headline {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .headline h1 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8vw;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+    margin-top: 20%;
+    margin-left: 0;
+  }
+
+  .greenTxt {
+    margin: 0;
+  }
+
+  p {
+    font-size: 2vw;
+    margin: 0;
+    width: 60%;
+  }
+
+  .socialMedia {
+    margin-block: 0;
+    left: calc(50% - 40px / 2 + 0.5px);
+  }
+
+  .moreWorks a img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px / 2 + 0.5px);
+    bottom: calc(-38% - 40px / 2 + 0.5px);
+    position: relative;
+  }
+
+  .moreWorks h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 5.2vw;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    position: relative;
+    bottom: calc(-115% - 40px / 2 + 0.5px);
+  }
+
+  .works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .workSkills {
+    margin-top: 0;
+  }
+
+  .SkillsBTNs {
+    width: 100%;
+  }
+
+  .aboutMe {
+    background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .aboutMe p {
+    margin-bottom: 2%;
+  }
+
+  .form-section {
+    display: flex;
+    background-image: url("/assets/images/contact\ form-left-desktop.svg"), url("/assets/images/contact-form-bg-middle-desktop.svg"), url("/assets/images/contact-form-right-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-x: right, center, left;
+    background-position-y: bottom, bottom, bottom;
+    background-size: 7%, 4%, 10%;
+  }
+
+  .form-section h2 {
+    font-size: 3vw;
+    align-items: center;
+    color: #172b4d;
+    font-weight: 700;
+  }
+
+  .formSection {
+    align-items: flex-start;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .seeProject {
+    transition: 0.3s;
+  }
+
+  .seeProject:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+
+  .projectBTNs li button {
+    transition: 0.3s ease-in-out;
+  }
+
+  .projectBTNs li:hover {
+    border: 1px solid green;
+    background-color: #3e8e41;
+    color: white;
+  }
+}
