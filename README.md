@@ -43,7 +43,8 @@ Open index.html
 
 ### Deployment
 
-
+Deploy  website using GitHub Pages.
+url for online version of portfolio url : https://manaromari.github.io/Project-1-Setup-and-mobile-version-skeleton/
 
 ## Authors
 
