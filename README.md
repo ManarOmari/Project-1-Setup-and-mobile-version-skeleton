@@ -14,7 +14,7 @@ github repo link
 [https://github.com/ManarOmari/Project-1-Setup-and-mobile-version-skeleton/pull/1]
 
 online version link 
-none 
+url :https://manaromari.github.io/Project-1-Setup-and-mobile-version-skeleton/
 
 ## Getting Started
 
