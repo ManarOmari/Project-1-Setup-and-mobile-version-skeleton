@@ -11,10 +11,9 @@ The 2 sections I added to build for this project are:
 
 ## Live Demo (if available)
 github repo link 
-[https://github.com/ManarOmari/Project-1-Setup-and-mobile-version-skeleton/pull/1]
+[https://github.com/ManarOmari/Project-1-Setup-and-mobile-version-skeleton/]
 
-online version link 
-url :https://manaromari.github.io/Project-1-Setup-and-mobile-version-skeleton/
+online version link [https://manaromari.github.io/Project-1-Setup-and-mobile-version-skeleton/]
 
 ## Getting Started
 
