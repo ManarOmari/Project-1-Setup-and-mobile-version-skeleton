@@ -48,7 +48,7 @@
 }
 
 .headline {
-  background-image: url(/assets/images/header-bg.png);
+  background-image: url("../images/header-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -423,7 +423,7 @@ footer a {
 
 @media only screen and (min-width: 768px) {
   main {
-    background-image: url("/assets/images/desktop.png");
+    background-image: url("../images/desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -548,7 +548,7 @@ footer a {
   }
 
   .aboutMe {
-    background-image: url("/assets/images/about-me-bg-left-desktop.svg"), url("/assets/images/about\ me-right-\ desktop.svg");
+    background-image: url("../images/about-me-bg-left-desktop.svg"), url("../images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 20%, contain;
     background-position-y: 10%, top;
@@ -565,7 +565,7 @@ footer a {
 
   .form-section {
     display: flex;
-    background-image: url("/assets/images/contact\ form-left-desktop.svg"), url("/assets/images/contact-form-bg-middle-desktop.svg"), url("/assets/images/contact-form-right-desktop.svg");
+    background-image: url("../images/contact\ form-left-desktop.svg"), url("../images/contact-form-bg-middle-desktop.svg"), url("../images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position-x: right, center, left;
     background-position-y: bottom, bottom, bottom;
