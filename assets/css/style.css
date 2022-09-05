@@ -30,6 +30,13 @@
   display: block;
   margin-right: 40px;
   margin-top: 54px;
+  cursor: pointer;
+}
+
+.humburger.active {
+  display: block;
+  margin: 0;
+  position: relative;
 }
 
 .humburger .bar {
@@ -43,12 +50,100 @@
   border: 2px solid #acb7c3;
 }
 
+.humburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.humburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
+}
+
+.humburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
 .navMenu {
-  display: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  position: fixed;
+  left: -120%;
+  top: 70px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.navMenu.active {
+  left: 0;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  justify-content: flex-start;
+  margin: 0;
+  gap: 0;
+}
+
+.navListItem {
+  margin-top: 10vw;
+  margin-left: 10vw;
+  padding-bottom: 0;
+  padding-top: 0;
+  list-style: none;
+}
+
+.skills li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  text-align: center;
+  display: block;
+  margin-top: 64px;
+}
+
+.navMenu .navListItem a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  color: #3a4a42;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.navMenu .navListItem a:hover {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid #3a4a42;
 }
 
 .headline {
-  background-image: url("../images/header-bg.png");
+  background-image: url(/assets/images/header-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -311,27 +406,6 @@ footer {
   flex-direction: column;
 }
 
-footer a {
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
-}
-
-.skills li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-  text-align: center;
-  display: block;
-  margin-top: 64px;
-}
-
 .SkillsBTNs {
   list-style: none;
   display: flex;
@@ -423,7 +497,7 @@ footer a {
 
 @media only screen and (min-width: 768px) {
   main {
-    background-image: url("../images/desktop.png");
+    background-image: url("/assets/images/desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -443,7 +517,11 @@ footer a {
   }
 
   .navMenu {
+    position: relative;
+    background: none;
     display: flex;
+    font-size: 20px;
+    top: 0;
     align-items: center;
   }
 
@@ -454,10 +532,18 @@ footer a {
 
   .navListItem {
     padding: 4%;
+    margin: 0;
   }
 
-  .navItems li a {
+  .navItems .navListItem a {
     text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    color: #3a4a42;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
   }
 
   .headline {
@@ -548,7 +634,10 @@ footer a {
   }
 
   .aboutMe {
-    background-image: url("../images/about-me-bg-left-desktop.svg"), url("../images/about\ me-right-\ desktop.svg");
+    background-image:
+
+      url("/assets/images/about-me-bg-left-desktop.svg"),
+      url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 20%, contain;
     background-position-y: 10%, top;
@@ -565,7 +654,10 @@ footer a {
 
   .form-section {
     display: flex;
-    background-image: url("../images/contact\ form-left-desktop.svg"), url("../images/contact-form-bg-middle-desktop.svg"), url("../images/contact-form-right-desktop.svg");
+    background-image:
+      url("/assets/images/contact\ form-left-desktop.svg"),
+      url("/assets/images/contact-form-bg-middle-desktop.svg"),
+      url("/assets/images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position-x: right, center, left;
     background-position-y: bottom, bottom, bottom;
