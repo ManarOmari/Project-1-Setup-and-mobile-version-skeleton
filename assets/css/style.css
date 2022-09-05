@@ -113,6 +113,17 @@ footer a {
   list-style: none;
 }
 
+.skills li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  text-align: center;
+  display: block;
+  margin-top: 64px;
+}
+
 .navMenu .navListItem a {
   text-decoration: none;
   font-style: normal;
@@ -395,17 +406,6 @@ footer {
   flex-direction: column;
 }
 
-.skills li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-  text-align: center;
-  display: block;
-  margin-top: 64px;
-}
-
 .SkillsBTNs {
   list-style: none;
   display: flex;
@@ -634,7 +634,8 @@ footer {
   }
 
   .aboutMe {
-    background-image: 
+    background-image:
+
       url("/assets/images/about-me-bg-left-desktop.svg"),
       url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
