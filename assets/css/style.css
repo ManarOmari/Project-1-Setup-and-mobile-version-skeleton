@@ -50,7 +50,6 @@
   border: 2px solid #acb7c3;
 }
 
-
 .humburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -111,8 +110,7 @@
   line-height: 44px;
   display: flex;
   color: #3a4a42;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   opacity: 1;
 }
@@ -167,6 +165,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .twitter {
   left: 27.31%;
   right: 67.36%;
@@ -182,6 +181,7 @@ p {
   bottom: 23.42%;
   padding: 10px;
 }
+
 .meduim {
   left: 48.38%;
   right: 46.29%;
@@ -465,6 +465,7 @@ footer a {
   margin-bottom: 20px;
   width: 400px;
 }
+
 #email {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -541,7 +542,7 @@ footer a {
     line-height: 25px;
     display: flex;
     color: #3a4a42;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 100;
   }
 
@@ -651,7 +652,8 @@ footer a {
 
   .form-section {
     display: flex;
-    background-image: url("/assets/images/contact\ form-left-desktop.svg"),
+    background-image:
+      url("/assets/images/contact\ form-left-desktop.svg"),
       url("/assets/images/contact-form-bg-middle-desktop.svg"),
       url("/assets/images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
