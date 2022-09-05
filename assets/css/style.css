@@ -33,6 +33,12 @@
   cursor: pointer;
 }
 
+.humburger.active {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+
 .humburger .bar {
   display: block;
   width: 25px;
@@ -44,18 +50,19 @@
   border: 2px solid #acb7c3;
 }
 
-.hamburger.active .bar:nth-child(2) {
+
+.humburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.humburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background-color: #fff;
+  background-color: #67798e;
 }
 
-.hamburger.active .bar:nth-child(3) {
+.humburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background-color: #fff;
+  background-color: #67798e;
 }
 
 .navMenu {
@@ -76,7 +83,7 @@
 
 .navMenu.active {
   left: 0;
-  top: 10px;
+  top: 40px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -107,13 +114,13 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
+  opacity: 1;
 }
 
 .navMenu .navListItem a:hover {
   width: 50%;
   padding: 20px;
   border: 4px solid #3a4a42;
-  
 }
 
 .headline {
@@ -627,7 +634,7 @@ footer a {
 
   .aboutMe {
     background-image: url("/assets/images/about-me-bg-left-desktop.svg"),
-     url("/assets/images/about\ me-right-\ desktop.svg");
+      url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 20%, contain;
     background-position-y: 10%, top;
