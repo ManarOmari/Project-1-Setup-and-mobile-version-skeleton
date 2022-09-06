@@ -7,7 +7,7 @@ const validateEmail = (email) => {
 };
 
 submitBtn.addEventListener('click', () => {
-  const emailVal = document.getElementById('mail').value;
+  const emailVal = document.getElementById('email').value;
   if (!validateEmail(emailVal)) {
     document.querySelector('.txtt').innerHTML = ' please enter correct email in lower case eg abcde@fgh.com';
   }
