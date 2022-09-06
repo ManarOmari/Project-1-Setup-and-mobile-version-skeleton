@@ -256,13 +256,13 @@
       <h6 class="headline inter-font">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h6>
-      <form action="https://formspree.io/f/xqkjapyw" method="post" class="formSection">
+      <form action="https://formspree.io/f/xqkjapyw" method="post" class="formSection" name="form">
       <input type="text" placeholder="Full name" maxlength="30" id="name" name="name"
       required>
-      <input type="email" name="email" placeholder="Email Address"  id="email" required>
+      <input type="email" name="email" placeholder="Email Address"  id="email" value="" required>
       <textarea  placeholder="Enter your text here"  maxlength="500" id="msg"  name="msg" required></textarea>
-      <button class="seeProject inter-font" type="submit" name="touch">Get in touch</button>
-      <label for="text" class="txtt"></label>
+      <button id="seeProject" class="seeProject inter-font" type="submit" name="touch">Get in touch</button>
+      <label for="email" class="label"></label>
     </form>
     </section>
     <footer>
@@ -295,9 +295,11 @@
       </ul>
       <a href="#" class="display">myemailhere@email.com</a>
     </footer>
+
     <script src="localStorage.js"></script>
     <script src="form_validation.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
 

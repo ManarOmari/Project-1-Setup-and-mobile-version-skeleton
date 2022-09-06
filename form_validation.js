@@ -1,4 +1,4 @@
-const submitBtn = document.querySelector('.seeProject');
+const submitBtn = document.querySelector('#seeProject');
 const validateEmail = (email) => {
   if (email.match(/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/)) {
     return true;
@@ -6,9 +6,10 @@ const validateEmail = (email) => {
   return false;
 };
 
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', (event) => {
   const emailVal = document.getElementById('email').value;
   if (!validateEmail(emailVal)) {
-    document.querySelector('.txtt').innerHTML = ' please enter correct email in lower case eg abcde@fgh.com';
+    let label=document.querySelector('.label').innerHTML="Email should be wriitn in small case";
+    event.preventDefault();
   }
 });
