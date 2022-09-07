@@ -9,7 +9,7 @@ const projectList = {
     title: "Keeping track of hundreds of components",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featured_image: new Image().src='/assets/images/bg1.png',
+    featured_image: new Image(),
     technologies: ["ruby and rails", "css", "javascript"],
     liveBtnImge: new Image(),
     SourceBtn: new Image(),
@@ -25,18 +25,19 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
     closeBtn.classList.add("close");
     closeBtn.innerHTML = "&times;";
     let image=document.createElement('img');
-     image = projectList.project1.featured_image;
+     image.innerHTML = projectList.project1.featured_image;
+     image.src='/assets/images/bg1.png'
     let cardConatiner= document.createElement('div');
     cardConatiner.classList.add('cardContainer');
     let heder = document.createElement("h2");
-    div.innerHTML = projectList.project1.title;
+    heder.innerHTML = projectList.project1.title;
      
 // When the user clicks on <span> (x), close the modal
     closeBtn.onclick=function(e) {
       modal.style.display = "none";
     };
     div.appendChild(closeBtn);
-   // div.append(image);
+    div.appendChild(image);
     modal.appendChild(div);
     cardConatiner.appendChild(heder);
     modal.appendChild(cardConatiner);
