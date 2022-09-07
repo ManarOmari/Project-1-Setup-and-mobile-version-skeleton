@@ -19,27 +19,46 @@ const projectList = {
 document.querySelectorAll("#seeProjectPopup").forEach((n) =>
   n.addEventListener("click", () => {
     modal_container.style.display = "block";
+    modal_container.classList.add('multi-stories');
     let div = document.createElement("div");
     div.classList.add('card');
-    let closeBtn = document.createElement("span");
-    closeBtn.classList.add("close");
-    closeBtn.innerHTML = "&times;";
+    //let closeBtn = document.createElement("span");
+    //closeBtn.classList.add("close");
+   // closeBtn.innerHTML = "&times;";
     let image=document.createElement('img');
      image.innerHTML = projectList.project1.featured_image;
-     image.src='/assets/images/bg1.png'
+     image.src='/assets/images/bg1.png';
     let cardConatiner= document.createElement('div');
     cardConatiner.classList.add('cardContainer');
     let heder = document.createElement("h2");
     heder.innerHTML = projectList.project1.title;
+
+    let listOfBtns = document.createElement("ul");
+    listOfBtns.classList.add('projectBTNs');
+    let listItem= document.createElement('li');
+    
+    for(let i=0;i<projectList.project1.technologies.length;i+=1){
+      let btns=document.createElement('button');
+      btns.className= '.projectBTNs li button';
+      btns.innerHTML=projectList.project1.technologies[i];
+      listItem.append(btns);
+      listOfBtns.appendChild(listItem);
+    }
+   let text= document.createElement('p');
+   //text.classList.add('text');
+   text.innerHTML=projectList.project1.description;
      
-// When the user clicks on <span> (x), close the modal
-    closeBtn.onclick=function(e) {
+// When the user clicks on image x, close the modal
+   image.onclick=function(e) {
       modal.style.display = "none";
     };
-    div.appendChild(closeBtn);
+    //div.appendChild(closeBtn);
     div.appendChild(image);
     modal.appendChild(div);
     cardConatiner.appendChild(heder);
+   
+    cardConatiner.appendChild(listOfBtns);
+    cardConatiner.appendChild(text);
     modal.appendChild(cardConatiner);
     modal_container.appendChild(modal);
     document.body.appendChild(modal_container);

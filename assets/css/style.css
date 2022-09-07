@@ -388,6 +388,7 @@ p {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   width: 80%; /* Could be more or less, depending on screen size */
+  text-align: start;
 }
 .close {
   color: #aaa;
@@ -405,6 +406,7 @@ p {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  text-align: start;
 }
 
 .card:hover {
@@ -413,9 +415,10 @@ p {
 
 .cardContainer {
   display: flex;
-  background-color: #008552;
-  color: white;
+  flex-direction: column;
+  text-align: start;
 }
+
 .aboutMe {
   background-color: white;
   background-image: none;
