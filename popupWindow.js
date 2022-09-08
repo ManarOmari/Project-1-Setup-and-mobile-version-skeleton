@@ -1,4 +1,3 @@
-//const btn=document.querySelector('#seeProjectPopup');
 const modal_container = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
 //var span = document.getElementsByClassName("close")[0];
