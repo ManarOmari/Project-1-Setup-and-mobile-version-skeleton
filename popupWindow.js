@@ -1,5 +1,7 @@
 const modal_container = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
+// var to match if the screen is for mobile or for desktop
+var x = window.matchMedia("(min-width: 768px)"); // desktop
 //var span = document.getElementsByClassName("close")[0];
 var multi_stories = document.querySelector(".multi-stories");
 // array to store element
@@ -18,6 +20,12 @@ const projectList = {
 
 document.querySelectorAll("#seeProjectPopup").forEach((n) =>
   n.addEventListener("click", () => {
+    // check if screen is for desktop
+    if(x.matches){
+       let y=1;
+      }
+       else {
+     
     modal_container.style.display = "block";
     modal_container.classList.add("multi-stories");
     let div = document.createElement("div");
@@ -66,9 +74,10 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
      listOfBtns2.appendChild(listItem2);
 
     // When the user clicks on image x, close the modal
-    image.onclick = function (e) {
-      modal.style.display = "none";
-    };
+    image.addEventListener('click', () => {
+      modal_container.style.display = "none";
+    });
+    
     //div.appendChild(closeBtn);
     div.appendChild(image);
     modal.appendChild(div);
@@ -79,12 +88,9 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
     modal.appendChild(cardConatiner);
     modal_container.appendChild(modal);
     document.body.appendChild(modal_container);
+  }
   })
+
 );
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+

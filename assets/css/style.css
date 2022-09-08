@@ -726,7 +726,10 @@ footer {
     font-size: 1.5vw;
     line-height: 2.7vw;
   }
-
+  
+  .modal-container {
+    width: 100%;
+  }
 
   .workSkills {
     width: 100%;
