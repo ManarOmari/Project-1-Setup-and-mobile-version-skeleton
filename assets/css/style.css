@@ -394,6 +394,10 @@ p {
   align-items: flex-start;
 }
 
+.modal img {
+  width: 100%;
+}
+
 .close {
   color: #aaa;
   float: right;
