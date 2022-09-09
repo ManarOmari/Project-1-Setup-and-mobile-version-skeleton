@@ -78,6 +78,7 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     text.innerHTML = projectList.project1.description;
     // When the user clicks on close x, close the modal
     closeBtn.addEventListener('click', () => {
+      modalContainer.removeChild(modal);
       modalContainer.style.display = 'none';
     });
     div.appendChild(closeBtn);
