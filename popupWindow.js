@@ -28,9 +28,6 @@ const projectList = {
 document.querySelectorAll("#seeProjectPopup").forEach((n) =>
   n.addEventListener("click", () => {
     // check if screen is for desktop
-<<<<<<< HEAD
-    if (x.matches) {
-=======
     if(x.matches){
       modal_container.style.display = "block";
       modal_container.classList.add("multi-stories");
