@@ -429,7 +429,7 @@ p {
 
 .titleHeader {
   color: #172b4d;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -736,11 +736,11 @@ footer {
     position: absolute;
     width: 40px;
     height: 40px;
-    right: calc(50% - 40px/2 - 624.5px);
-    background: #EBECF0;
+    right: calc(50% - 40px / 2 - 624.5px);
+    background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
-    top: calc(50% - 29px/2 - 240.5px);
+    top: calc(50% - 29px / 2 - 240.5px);
   }
 
   .card {
@@ -766,7 +766,7 @@ footer {
   .workSkills {
     width: 100%;
   }
-  
+
   .textModal {
     width: 100%;
     font-family: "Inter", sans-serif;
@@ -798,7 +798,8 @@ footer {
   }
 
   .aboutMe {
-    background-image: url("/assets/images/about-me-bg-left-desktop.svg"),
+    background-image:
+      url("/assets/images/about-me-bg-left-desktop.svg"),
       url("/assets/images/about\ me-right-\ desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 20%, contain;
@@ -816,7 +817,8 @@ footer {
 
   .form-section {
     display: flex;
-    background-image: url("/assets/images/contact\ form-left-desktop.svg"),
+    background-image:
+      url("/assets/images/contact\ form-left-desktop.svg"),
       url("/assets/images/contact-form-bg-middle-desktop.svg"),
       url("/assets/images/contact-form-right-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
