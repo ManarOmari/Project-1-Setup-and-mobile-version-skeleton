@@ -3,8 +3,8 @@ const form = document.querySelector('.formSection');
 const { name, email, msg } = form.elements;
 if (!localStorage.getItem('formObjectData')) {
   const formData = { fnameData: '', emailData: '', messageData: '' };
-  localStorage.setItem('formObjectData', JSON.stringify(formData)); 
-}else {
+  localStorage.setItem('formObjectData', JSON.stringify(formData));
+} else {
   const formData = JSON.parse(localStorage.getItem('formObjectData'));
   name.value = formData.fnameData;
   email.value = formData.emailData;
