@@ -14,12 +14,12 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-    ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
-  {
-  id:2,
+},
+{
+  id: 2,
   title: 'Keeping track of hundreds of components',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -32,12 +32,12 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-    ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
-  {
-  id:3,
+},
+{
+  id: 3,
   title: 'Keeping track of hundreds of components',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -50,12 +50,12 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-      ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
-  {
-  id:4,
+},
+{
+  id: 4,
   title: 'Keeping track of hundreds of components',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -68,12 +68,12 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-    ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
-  {
-  id:5,
+},
+{
+  id: 5,
   title: 'Keeping track of hundreds of components',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -86,12 +86,12 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-    ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
-  {
-  id:6,
+},
+{
+  id: 6,
   title: 'Keeping track of hundreds of components',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -104,10 +104,10 @@ const projectList = [{
     'Bootstrap',
     'Terminal',
     'Codepen',
-    ],
+  ],
   liveBtnImge: new Image(),
   SourceBtn: new Image(),
-  },
+},
 ];
 
 document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener('click', () => {
