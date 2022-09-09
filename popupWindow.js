@@ -2,7 +2,7 @@ const modal_container = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
 // var to match if the screen is for mobile or for desktop
 var x = window.matchMedia("(min-width: 768px)"); // desktop
-//var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 var multi_stories = document.querySelector(".multi-stories");
 // array to store element
 const projectList = {
@@ -31,9 +31,11 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
     if(x.matches){
       modal_container.style.display = "block";
       modal_container.classList.add("multi-stories");
+      let closeBtn = document.createElement("span");
+      closeBtn.classList.add("close");
+      closeBtn.innerHTML = "&times;";
       let div = document.createElement("div");
       div.classList.add("card");
-      // ADd close btn **
       let image = document.createElement("img");
       image.innerHTML = projectList.project1.featured_image;
       image.src = "/assets/images/popupDesktop.png";
@@ -63,6 +65,8 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
       listOfBtns2.appendChild(listItem2);
       let listOfBtns = document.createElement("ul");
       listOfBtns.classList.add("projectBTNs");
+       listOfBtns.style.justifyItems='flex-start';
+      listOfBtns.style.justifyContent= 'left';
       let listItem = document.createElement("li");
       for (let i = 0; i < projectList.project1.technologiesDesktop.length; i += 1) {
         let btns = document.createElement("button");
@@ -75,11 +79,11 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
       let text = document.createElement("p");
       text.classList.add("textModal");
       text.innerHTML = projectList.project1.description;
-      // When the user clicks on image x, close the modal
-      image.addEventListener("click", () => {
+      // When the user clicks on close x, close the modal
+      closeBtn.addEventListener("click", () => {
         modal_container.style.display = "none";
       });
-      //div.appendChild(closeBtn);
+      div.appendChild(closeBtn);
       div.appendChild(image);
       modal.appendChild(div);
       div2.appendChild(heder);
@@ -91,18 +95,15 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
       modal.appendChild(cardConatiner);
       modal_container.appendChild(modal);
       document.body.appendChild(modal_container);
-      // desktop 
+    
        
       }
-      
+
     else {
       modal_container.style.display = "block";
       modal_container.classList.add("multi-stories");
       let div = document.createElement("div");
       div.classList.add("card");
-      //let closeBtn = document.createElement("span");
-      //closeBtn.classList.add("close");
-      // closeBtn.innerHTML = "&times;";
       let image = document.createElement("img");
       image.innerHTML = projectList.project1.featured_image;
       image.src = "/assets/images/bg1.png";
@@ -113,6 +114,7 @@ document.querySelectorAll("#seeProjectPopup").forEach((n) =>
       heder.innerHTML = projectList.project1.title;
       let listOfBtns = document.createElement("ul");
       listOfBtns.classList.add("projectBTNs");
+     
       let listItem = document.createElement("li");
 
       for (let i = 0; i < projectList.project1.technologies.length; i += 1) {
