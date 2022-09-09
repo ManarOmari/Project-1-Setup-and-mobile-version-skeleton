@@ -376,6 +376,7 @@ p {
 }
 
 .modal-container {
+  /* border: 2px solid red; */
   display: none;
   position: fixed;
   z-index: 1;
@@ -389,6 +390,7 @@ p {
 
 .modal {
   background-color: #fefefe;
+  border: 2px solid red;
   margin: 15% auto;
   padding: 20px;
   width: 80%;
@@ -414,6 +416,7 @@ p {
 
 .card {
   transition: 0.3s;
+  /* border: 2px solid red; */
   text-align: start;
 }
 
@@ -421,10 +424,21 @@ p {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.cardContainer > .projectBTNs {
+  /* display: block; */
+  padding: 0;
+  /* width: 40%; */
+  /* flex-wrap: wrap; */
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+
 .cardContainer {
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  text-align: start;
+  text-align: left;
 }
 
 .titleHeader {
@@ -439,14 +453,16 @@ p {
 .textModal {
   font-style: normal;
   font-size: 16px;
+  text-align: left;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 24px;
-  justify-content: left;
-  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
   font-family: "Inter", sans-serif;
   color: #344563;
 }
+
 
 .modal .livebtns {
   background-color: #36b37f;
