@@ -713,6 +713,8 @@ footer {
     text-align: center;
   }
 
+
+
   .works {
     width: 100%;
     display: grid;
@@ -726,9 +728,20 @@ footer {
     font-size: 1.5vw;
     line-height: 2.7vw;
   }
-  
   .modal-container {
     width: 100%;
+  }
+  .card {
+    display: flex;
+  }
+  .cardContainer {
+    display: flex;
+  }
+  .titleHeader {
+    font-weight: 700;
+  }
+  .div2 {
+    display: flex;
   }
 
   .workSkills {
