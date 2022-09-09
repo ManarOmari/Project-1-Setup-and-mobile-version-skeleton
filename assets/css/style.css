@@ -231,6 +231,10 @@ p {
   text-align: center;
 }
 
+.modal img {
+  width: 100%;
+}
+
 .moreWorks a img {
   padding: 8px;
   width: 40px;
@@ -392,10 +396,6 @@ p {
   border: 1px solid #dfe1e6;
   border-radius: 25px;
   align-items: flex-start;
-}
-
-.modal img {
-  width: 100%;
 }
 
 .close {
@@ -695,6 +695,10 @@ footer {
     margin-block: 0;
   }
 
+  .modal img {
+    margin-top: 40px;
+  }
+
   .moreWorks a img {
     margin-bottom: 130px;
   }
@@ -745,10 +749,6 @@ footer {
 
   .card {
     display: flex;
-  }
-
-  .modal img {
-    margin-top: 40px;
   }
 
   .cardContainer {
