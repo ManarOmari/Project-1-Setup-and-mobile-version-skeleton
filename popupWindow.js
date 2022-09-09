@@ -52,7 +52,7 @@ const projectList = [{
     'Codepen',
       ],
   liveBtnImge: new Image(),
-  SourceBtn: new Image(), Image(),
+  SourceBtn: new Image(),
   },
   {
   id:4,
