@@ -390,7 +390,6 @@ p {
 
 .modal {
   background-color: #fefefe;
-  border: 2px solid red;
   margin: 15% auto;
   padding: 20px;
   width: 80%;
@@ -416,7 +415,6 @@ p {
 
 .card {
   transition: 0.3s;
-  /* border: 2px solid red; */
   text-align: start;
 }
 
@@ -425,14 +423,9 @@ p {
 }
 
 .cardContainer > .projectBTNs {
-  /* display: block; */
   padding: 0;
-  /* width: 40%; */
-  /* flex-wrap: wrap; */
   margin: 0;
-  /* border: 2px solid red; */
 }
-
 
 .cardContainer {
   /* border: 2px solid red; */
@@ -462,7 +455,6 @@ p {
   font-family: "Inter", sans-serif;
   color: #344563;
 }
-
 
 .modal .livebtns {
   background-color: #36b37f;
@@ -756,7 +748,6 @@ footer {
     position: absolute;
     width: 40px;
     height: 40px;
-   
     background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
