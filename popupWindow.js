@@ -28,6 +28,9 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
   if (x.matches) {
     modalContainer.style.display = 'block';
     modalContainer.classList.add('multi-stories');
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modalContainer.appendChild(modal);
     const closeBtn = document.createElement('span');
     closeBtn.classList.add('close');
     closeBtn.innerHTML = '&times;';
@@ -93,9 +96,16 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     modal.appendChild(cardConatiner);
     modalContainer.appendChild(modal);
     document.body.appendChild(modalContainer);
+    closeBtn.addEventListener('click', () => {
+      modalContainer.removeChild(modal);
+      modalContainer.style.display = 'none';
+    });
   } else {
     modalContainer.style.display = 'block';
     modalContainer.classList.add('multi-stories');
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modalContainer.appendChild(modal);
     const div = document.createElement('div');
     div.classList.add('card');
     const image = document.createElement('img');
