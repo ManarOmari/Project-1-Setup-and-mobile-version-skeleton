@@ -9,7 +9,8 @@ const validateEmail = (email) => {
 submitBtn.addEventListener('click', (event) => {
   const emailVal = document.getElementById('email').value;
   if (!validateEmail(emailVal)) {
-    let label=document.querySelector('.label').innerHTML="Email should be wriitn in small case";
+    const label = document.querySelector('.label');
+    label.innerHTML = 'Email should be wriitn in small case';
     event.preventDefault();
   }
 });
