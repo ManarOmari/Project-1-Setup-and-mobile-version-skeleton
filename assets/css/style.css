@@ -756,11 +756,11 @@ footer {
     position: absolute;
     width: 40px;
     height: 40px;
-    right: calc(50% - 40px / 2 - 624.5px);
+   
     background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
-    top: calc(50% - 29px / 2 - 240.5px);
+    right:  135px;
   }
 
   .card {

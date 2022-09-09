@@ -1,5 +1,5 @@
 const modalContainer = document.querySelector('.modal-container');
-const modal = document.querySelector('.modal');
+//const modal = document.querySelector('.modal');
 // var to match if the screen is for mobile or for desktop
 const x = window.matchMedia('(min-width: 768px)'); // desktop
 // array to store element
