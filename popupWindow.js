@@ -3,8 +3,8 @@ const modalContainer = document.querySelector('.modal-container');
 // var to match if the screen is for mobile or for desktop
 const x = window.matchMedia('(min-width: 768px)'); // desktop
 // array to store element
-const projectList = {
-  project1: {
+const projectList = [{
+    id: 1,
     title: 'Keeping track of hundreds of components',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -21,7 +21,97 @@ const projectList = {
     liveBtnImge: new Image(),
     SourceBtn: new Image(),
   },
-};
+  {
+    id:2,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featured_image: new Image(),
+    technologies: ['Ruby on rails', 'css', 'Javascript'],
+    technologiesDesktop: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveBtnImge: new Image(),
+    SourceBtn: new Image(),
+  },
+  {
+    id:3,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featured_image: new Image(),
+    technologies: ['Ruby on rails', 'css', 'Javascript'],
+    technologiesDesktop: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveBtnImge: new Image(),
+    SourceBtn: new Image(),
+  },
+  {
+    id:4,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featured_image: new Image(),
+    technologies: ['Ruby on rails', 'css', 'Javascript'],
+    technologiesDesktop: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveBtnImge: new Image(),
+    SourceBtn: new Image(),
+  },
+  {
+    id:5,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featured_image: new Image(),
+    technologies: ['Ruby on rails', 'css', 'Javascript'],
+    technologiesDesktop: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveBtnImge: new Image(),
+    SourceBtn: new Image(),
+  },
+  {
+    id:6,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featured_image: new Image(),
+    technologies: ['Ruby on rails', 'css', 'Javascript'],
+    technologiesDesktop: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveBtnImge: new Image(),
+    SourceBtn: new Image(),
+  },
+];
 
 document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener('click', () => {
   // check if screen is for desktop
@@ -37,7 +127,7 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     const div = document.createElement('div');
     div.classList.add('card');
     const image = document.createElement('img');
-    image.innerHTML = projectList.project1.featured_image;
+    image.innerHTML = projectList[0].featured_image;
     image.src = '/assets/images/popupDesktop.png';
     const cardConatiner = document.createElement('div');
     cardConatiner.classList.add('cardContainer');
@@ -45,7 +135,7 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     div2.classList.add('div2');
     const heder = document.createElement('h2');
     heder.classList.add('titleHeader');
-    heder.innerHTML = projectList.project1.title;
+    heder.innerHTML = projectList[0].title;
     // add live and source btns
     const listOfBtns2 = document.createElement('ul');
     listOfBtns2.classList.add('projectBTNs');
@@ -68,17 +158,17 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     listOfBtns.style.justifyItems = 'flex-start';
     listOfBtns.style.justifyContent = 'left';
     const listItem = document.createElement('li');
-    for (let i = 0; i < projectList.project1.technologiesDesktop.length; i += 1) {
+    for (let i = 0; i < projectList[0].technologiesDesktop.length; i += 1) {
       const btns = document.createElement('button');
       btns.className = '.projectBTNs li button';
-      btns.innerHTML = projectList.project1.technologies[i];
+      btns.innerHTML = projectList[0].technologies[i];
       listItem.append(btns);
       listOfBtns.appendChild(listItem);
     }
     // description
     const text = document.createElement('p');
     text.classList.add('textModal');
-    text.innerHTML = projectList.project1.description;
+    text.innerHTML = projectList[0].description;
     // When the user clicks on close x, close the modal
     closeBtn.addEventListener('click', () => {
       modalContainer.removeChild(modal);
@@ -109,28 +199,28 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     const div = document.createElement('div');
     div.classList.add('card');
     const image = document.createElement('img');
-    image.innerHTML = projectList.project1.featured_image;
+    image.innerHTML = projectList[0].featured_image;
     image.src = '/assets/images/bg1.png';
     const cardConatiner = document.createElement('div');
     cardConatiner.classList.add('cardContainer');
     const heder = document.createElement('h2');
     heder.classList.add('titleHeader');
-    heder.innerHTML = projectList.project1.title;
+    heder.innerHTML = projectList[0].title;
     const listOfBtns = document.createElement('ul');
     listOfBtns.classList.add('projectBTNs');
 
     const listItem = document.createElement('li');
 
-    for (let i = 0; i < projectList.project1.technologies.length; i += 1) {
+    for (let i = 0; i < projectList[0].technologies.length; i += 1) {
       const btns = document.createElement('button');
       btns.className = '.projectBTNs li button';
-      btns.innerHTML = projectList.project1.technologies[i];
+      btns.innerHTML = projectList[0].technologies[i];
       listItem.append(btns);
       listOfBtns.appendChild(listItem);
     }
     const text = document.createElement('p');
     text.classList.add('textModal');
-    text.innerHTML = projectList.project1.description;
+    text.innerHTML = projectList[0].description;
     // btn source and live btns
     const listOfBtns2 = document.createElement('ul');
     listOfBtns2.classList.add('projectBTNs');
