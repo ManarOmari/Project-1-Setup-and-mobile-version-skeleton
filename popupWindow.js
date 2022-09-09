@@ -86,7 +86,6 @@ document.querySelectorAll('#seeProjectPopup').forEach((n) => n.addEventListener(
     div2.appendChild(heder);
     div2.appendChild(listOfBtns2);
     cardConatiner.appendChild(div2);
-    //
     cardConatiner.appendChild(listOfBtns);
     cardConatiner.appendChild(text);
     modal.appendChild(cardConatiner);
