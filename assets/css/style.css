@@ -413,7 +413,6 @@ p {
 }
 
 .card {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
   transition: 0.3s;
   text-align: start;
 }
@@ -442,7 +441,6 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  /* text-align: center; */
   margin-left: 24px;
   justify-content: left;
   text-align: left;
@@ -729,6 +727,7 @@ footer {
   .modal-container {
     width: 100%;
   }
+
   .close {
     display: flex;
     flex-direction: row;
@@ -737,25 +736,29 @@ footer {
     position: absolute;
     width: 40px;
     height: 40px;
-    /* top: 170px; */
     right: calc(50% - 40px/2 - 624.5px);
     background: #EBECF0;
     mix-blend-mode: multiply;
     border-radius: 8px;
     top: calc(50% - 29px/2 - 240.5px);
   }
+
   .card {
     display: flex;
   }
+
   .modal img {
     margin-top: 40px;
   }
+
   .cardContainer {
     display: flex;
   }
+
   .titleHeader {
     font-weight: 700;
   }
+
   .div2 {
     display: flex;
   }
@@ -763,6 +766,7 @@ footer {
   .workSkills {
     width: 100%;
   }
+  
   .textModal {
     width: 100%;
     font-family: "Inter", sans-serif;
